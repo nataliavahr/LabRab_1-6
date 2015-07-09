@@ -1,0 +1,41 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+    <script>
+function fan()
+{
+    
+    var n = document.forma1.n.value;
+    var otvet = 0;
+    arr = document.forma1.a.value.split(' ');
+
+    
+        for (var i=0;i<arr.length;i++)
+    {
+
+            if ( (arr[i] % 5) == 0 || (arr[i] % 7) != 0 )
+            {
+               otvet+= parseFloat(arr[i]);
+            }
+
+            else otvet=0;
+            
+     }
+        document.forma1.res.value = otvet;
+    
+}
+
+
+    </script>
+</head>
+<body>
+    <form name="forma1">
+        Задание 182 <br /><br />
+        Введите натуральное число n <input type="text" name="n" size="12" /><br /><br />
+        Введите последовательности a1, ... ,an <input type="text" name="a" size="12" /><br /><br />
+        ! Внимание числа вводятся через пробел !<br /><br />
+        <input type="button" value="Вычислить" onclick="fan();" /><br /><br />
+        Ответ <input type="text" name="res" size="20" /> <br /><br />
+    </form>
+</body>
+</html>
