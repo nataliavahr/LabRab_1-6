@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="http://code.jquery.com/jquery-latest.js">
+</script>
+<script>
+
+$(document).ready(function ()
+ {
+   $("#but1").click(function () 
+     {
+       $("tr:even").hide();
+     });
+   $("#but2").click(function ()
+     {
+       $("tr:even").show();
+     });
+ });
+</script>
+
+</head>
+<body>
+
+<button id="but1">Click me</button>
+<button id="but2">Click me for show</button>
+<table border="1">
+ <tr>
+    <th>Страна</th>
+    <th>Город</th>
+  </tr>
+ <tr>
+    <th>Россия</th>
+    <th>Москва</th>
+  </tr>
+ <tr>
+    <th>Германия</th>
+    <th>Берлин</th>
+  </tr>
+ <tr>
+    <th>США</th>
+    <th>Бостон</th>
+  </tr>
+ <tr>
+    <th>Италия</th>
+    <th>Рим</th>
+  </tr>
+ <tr>
+    <th>Великобритания</th>
+    <th>Лондон</th>
+  </tr>
+
+</body>
+</html>
